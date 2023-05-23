@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+
+    Outbound flight
+    <brk></brk>
+    <ul>
+        {% for i in range(sizeArray) %}
+          <li>{{ arrivalToDepartureData[i] }}</li>
+        {% endfor %}
+    </ul>
+
+    Returning flight
+    <ul>
+        {% for i in range(sizeArray) %}
+          <li>{{ departureToArrivalData[i] }}</li>
+        {% endfor %}
+    </ul>
+
+<br></br>
+<a href="/">Go back</a>
+<br></br>
+</body>
+</html>

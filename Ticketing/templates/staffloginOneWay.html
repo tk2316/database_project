@@ -1,0 +1,26 @@
+
+<html>
+<head>
+</head>
+<body>
+<form action="/staffloginOneWaySearch" method="POST">
+    <input tpye = text name = departingFrom placeholder= "departing city/code" required>
+    <br></br>
+    <input tpye = text name = arrivingAt placeholder= "arriving city/code" required>
+    <br></br>
+    <input type = submit value = search>
+    <br></br>
+
+    	
+	{% if error %}
+    <p class="error"><strong>Error:</strong> {{error}}</p>
+    {% endif %}
+
+</form>
+<br></br>
+<a href="/staffloginFlight">Go back</a>
+<br></br>
+</body>
+
+
+</html>

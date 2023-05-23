@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<form action="/buyTicket" method="POST">
+    <ul>
+        {% for i in range(sizeArray) %}
+          <li>{{ data[i] }}</li>
+        {% endfor %}
+    </ul>
+    <input type = text name = num placeholder= "choose one flight num" required>
+
+    <br></br>
+    <input type = submit value = find>
+    <br></br>
+    <a href="/purchaseTicket">back</a>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<form action="/reserveTicket" method="POST">
+    <ul>
+        {{data}}
+    </ul>
+    <br></br>
+    choose one from above
+    <br></br>
+<input type = text name = id placeholder= "ticket id" required>
+<input type = text name = flight_number placeholder= "flight number" required>
+
+<input type = text name = payment_type placeholder= "payment type" required>
+<input type = text name = payment_num placeholder= "payment number" required>
+<input type = text name = payment_name placeholder= "payment name" required>
+
+<input type = date name = payment_exp_date placeholder= "payment exp date" required>
+payment exp date
+<br></br>
+<input type = submit value = reserve>
+<br></br>
+</form>
+
+<br></br>
+<a href="/purchaseTicket">back</a>
+</body>
+</html>

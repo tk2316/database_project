@@ -1,0 +1,29 @@
+
+<html>
+<head>
+</head>
+<body>
+<form action="/makeReview" method="POST">
+    
+    <input tpye = text name = flight_number placeholder= "flight number" required>
+    <br></br>
+    <input tpye = text name = rating placeholder= "rating " required>
+    <br></br>
+    <input tpye = text name = comment placeholder= "comment" required>
+    <br></br>
+
+    <input type = submit value = search>
+    <br></br>
+    	
+	{% if error %}
+    <p class="error"><strong>Error:</strong> {{error}}</p>
+    {% endif %} 
+</form>
+
+<br></br>
+<a href="/home">Go back</a>
+<br></br>
+</body>
+
+
+</html>

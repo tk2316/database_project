@@ -1,0 +1,23 @@
+
+<html>
+<head>
+</head>
+<body>
+<form action="/viewRatingAuth" method="POST">
+    <input tpye = text name = flight_number placeholder= "flight number " required>
+    <br></br>
+    <input type = submit value = search>
+    <br></br>
+    	
+	{% if error %}
+    <p class="error"><strong>Error:</strong> {{error}}</p>
+    {% endif %} 
+</form>
+
+<br></br>
+<a href="/staffHome">Go back</a>
+<br></br>
+</body>
+
+
+</html>
